@@ -1335,3 +1335,181 @@
    at Jackett.Server.Controllers.ResultsController.Torznab(TorznabRequest request) in ./Jackett.Server/Controllers/ResultsController.cs:line 414
 
 
+2023-06-22 11:27:05.9075 Info Torznab search in Badass Torrents => Found 41 releases (from cache) [8ms] 
+2023-06-22 11:27:06.2271 Error Jackett.Common.IndexerException: Exception (1337x): certificate validation failed: [Subject]
+  CN=1337x.to
+
+[Issuer]
+  CN=ATLAS-SUB-CA, C=FR
+
+[Serial Number]
+  4CFCDBCB4138F73DCB79961441852DB1B011
+
+[Not Before]
+  5/8/2023 2:00:59AM
+
+[Not After]
+  8/6/2023 2:00:58AM
+
+[Thumbprint]
+  8E47AD1D633507A5A51BAAD99DDCC880BDB8A53B
+ 
+
+[v0.21.275.0] Jackett.Common.IndexerException: Exception (1337x): certificate validation failed: [Subject]
+  CN=1337x.to
+
+[Issuer]
+  CN=ATLAS-SUB-CA, C=FR
+
+[Serial Number]
+  4CFCDBCB4138F73DCB79961441852DB1B011
+
+[Not Before]
+  5/8/2023 2:00:59AM
+
+[Not After]
+  8/6/2023 2:00:58AM
+
+[Thumbprint]
+  8E47AD1D633507A5A51BAAD99DDCC880BDB8A53B
+
+ ---> System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.Exception: certificate validation failed: [Subject]
+  CN=1337x.to
+
+[Issuer]
+  CN=ATLAS-SUB-CA, C=FR
+
+[Serial Number]
+  4CFCDBCB4138F73DCB79961441852DB1B011
+
+[Not Before]
+  5/8/2023 2:00:59AM
+
+[Not After]
+  8/6/2023 2:00:58AM
+
+[Thumbprint]
+  8E47AD1D633507A5A51BAAD99DDCC880BDB8A53B
+
+   at Jackett.Common.Utils.Clients.HttpWebClient2.ValidateCertificate(HttpRequestMessage request, X509Certificate2 certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors) in ./Jackett.Common/Utils/Clients/HttpWebClient2.cs:line 53
+   at System.Net.Http.ConnectHelper.<>c__DisplayClass1_0.<SetUpRemoteCertificateValidationCallback>b__0(Object sender, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors)
+   at System.Net.Security.SecureChannel.VerifyRemoteCertificate(RemoteCertificateValidationCallback remoteCertValidationCallback, SslCertificateTrust trust, ProtocolToken& alertToken, SslPolicyErrors& sslPolicyErrors, X509ChainStatusFlags& chainStatus)
+   at System.Net.Security.SslStream.CompleteHandshake(ProtocolToken& alertToken, SslPolicyErrors& sslPolicyErrors, X509ChainStatusFlags& chainStatus)
+   at System.Net.Security.SslStream.CompleteHandshake(SslAuthenticationOptions sslAuthenticationOptions)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at FlareSolverrSharp.ClearanceHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Jackett.Common.Utils.Clients.HttpWebClient2.Run(WebRequest webRequest) in ./Jackett.Common/Utils/Clients/HttpWebClient2.cs:line 179
+   at Jackett.Common.Utils.Clients.WebClient.GetResultAsync(WebRequest request) in ./Jackett.Common/Utils/Clients/WebClient.cs:line 186
+   at Jackett.Common.Indexers.BaseWebIndexer.RequestWithCookiesAsync(String url, String cookieOverride, RequestType method, String referer, IEnumerable`1 data, Dictionary`2 headers, String rawbody, Nullable`1 emulateBrowser) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 531
+   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1496
+   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 312
+   --- End of inner exception stack trace ---
+   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 330
+   at Jackett.Common.Indexers.BaseWebIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 701
+   at Jackett.Server.Controllers.ResultsController.Torznab(TorznabRequest request) in ./Jackett.Server/Controllers/ResultsController.cs:line 414
+
+
+2023-06-22 11:42:41.6048 Info Torznab search in Badass Torrents => Found 40 releases [5298ms] 
+2023-06-22 11:58:06.6701 Info Torznab search in Badass Torrents => Found 40 releases (from cache) [5ms] 
+2023-06-22 11:58:06.8039 Error Jackett.Common.IndexerException: Exception (1337x): certificate validation failed: [Subject]
+  CN=1337x.to
+
+[Issuer]
+  CN=ATLAS-SUB-CA, C=FR
+
+[Serial Number]
+  4CFCDBCB4138F73DCB79961441852DB1B011
+
+[Not Before]
+  5/8/2023 2:00:59AM
+
+[Not After]
+  8/6/2023 2:00:58AM
+
+[Thumbprint]
+  8E47AD1D633507A5A51BAAD99DDCC880BDB8A53B
+ 
+
+[v0.21.275.0] Jackett.Common.IndexerException: Exception (1337x): certificate validation failed: [Subject]
+  CN=1337x.to
+
+[Issuer]
+  CN=ATLAS-SUB-CA, C=FR
+
+[Serial Number]
+  4CFCDBCB4138F73DCB79961441852DB1B011
+
+[Not Before]
+  5/8/2023 2:00:59AM
+
+[Not After]
+  8/6/2023 2:00:58AM
+
+[Thumbprint]
+  8E47AD1D633507A5A51BAAD99DDCC880BDB8A53B
+
+ ---> System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.Exception: certificate validation failed: [Subject]
+  CN=1337x.to
+
+[Issuer]
+  CN=ATLAS-SUB-CA, C=FR
+
+[Serial Number]
+  4CFCDBCB4138F73DCB79961441852DB1B011
+
+[Not Before]
+  5/8/2023 2:00:59AM
+
+[Not After]
+  8/6/2023 2:00:58AM
+
+[Thumbprint]
+  8E47AD1D633507A5A51BAAD99DDCC880BDB8A53B
+
+   at Jackett.Common.Utils.Clients.HttpWebClient2.ValidateCertificate(HttpRequestMessage request, X509Certificate2 certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors) in ./Jackett.Common/Utils/Clients/HttpWebClient2.cs:line 53
+   at System.Net.Http.ConnectHelper.<>c__DisplayClass1_0.<SetUpRemoteCertificateValidationCallback>b__0(Object sender, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors)
+   at System.Net.Security.SecureChannel.VerifyRemoteCertificate(RemoteCertificateValidationCallback remoteCertValidationCallback, SslCertificateTrust trust, ProtocolToken& alertToken, SslPolicyErrors& sslPolicyErrors, X509ChainStatusFlags& chainStatus)
+   at System.Net.Security.SslStream.CompleteHandshake(ProtocolToken& alertToken, SslPolicyErrors& sslPolicyErrors, X509ChainStatusFlags& chainStatus)
+   at System.Net.Security.SslStream.CompleteHandshake(SslAuthenticationOptions sslAuthenticationOptions)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at FlareSolverrSharp.ClearanceHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Jackett.Common.Utils.Clients.HttpWebClient2.Run(WebRequest webRequest) in ./Jackett.Common/Utils/Clients/HttpWebClient2.cs:line 179
+   at Jackett.Common.Utils.Clients.WebClient.GetResultAsync(WebRequest request) in ./Jackett.Common/Utils/Clients/WebClient.cs:line 186
+   at Jackett.Common.Indexers.BaseWebIndexer.RequestWithCookiesAsync(String url, String cookieOverride, RequestType method, String referer, IEnumerable`1 data, Dictionary`2 headers, String rawbody, Nullable`1 emulateBrowser) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 531
+   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1496
+   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 312
+   --- End of inner exception stack trace ---
+   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 330
+   at Jackett.Common.Indexers.BaseWebIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 701
+   at Jackett.Server.Controllers.ResultsController.Torznab(TorznabRequest request) in ./Jackett.Server/Controllers/ResultsController.cs:line 414
+
+
+2023-06-22 12:03:05.2223 Info Checking for updates... Jackett variant: CoreLinuxMuslArm64 
+2023-06-22 12:03:05.5845 Info Jackett is already updated. Current version: v0.21.275 
+2023-06-22 12:05:12.5338 Info Jackett stopped 

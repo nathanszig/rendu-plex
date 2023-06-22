@@ -5,6 +5,8 @@ services:
     container_name: plex
     ports:
       - 32400:32400
+    volumes:
+      - ./downloads:/downloads
   qbittorrent:
     image: linuxserver/qbittorrent
     container_name: qbittorrent
