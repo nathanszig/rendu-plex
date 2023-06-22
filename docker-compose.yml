@@ -66,3 +66,17 @@ services:
     ports:
       - 6767:6767
     restart: unless-stopped
+  radarr:
+    image: linuxserver/radarr
+    container_name: radarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+    volumes:
+      - ./radarr:/config
+      - ./downloads:/movies #optional
+      - ./downloads:/downloads #optional
+    ports:
+      - 7878:7878
+    restart: unless-stopped
