@@ -22,4 +22,4 @@ jobs:
             cd rendu/rendu-plex
             git pull
             docker compose down
-            docker compose up
+            docker compose up -d --build
