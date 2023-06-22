@@ -8,7 +8,7 @@ services:
     volumes:
       - ./downloads:/downloads
     environment:
-      - PLEX_CLAIM=claim-x5gmpuw7U9nSKPMFBZKj
+      - PLEX_CLAIM=claim-xszEtURE9mCKJ2JN5tsC
   qbittorrent:
     image: linuxserver/qbittorrent
     container_name: qbittorrent
