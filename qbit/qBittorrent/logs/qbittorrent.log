@@ -1,0 +1,109 @@
+(N) 2023-06-22T09:29:25 - qBittorrent v4.5.4 started
+(N) 2023-06-22T09:29:25 - Using config directory: /config/qBittorrent
+(N) 2023-06-22T09:29:25 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2023-06-22T09:29:25 - Peer ID: "-qB4540-"
+(I) 2023-06-22T09:29:25 - HTTP User-Agent: "qBittorrent/4.5.4"
+(I) 2023-06-22T09:29:25 - Distributed Hash Table (DHT) support: ON
+(I) 2023-06-22T09:29:25 - Local Peer Discovery support: ON
+(I) 2023-06-22T09:29:25 - Peer Exchange (PeX) support: ON
+(I) 2023-06-22T09:29:25 - Anonymous mode: OFF
+(I) 2023-06-22T09:29:25 - Encryption support: ON
+(I) 2023-06-22T09:29:25 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2023-06-22T09:29:25 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2023-06-22T09:29:25 - Successfully listening on IP. IP: "172.23.0.3". Port: "TCP/6881"
+(I) 2023-06-22T09:29:25 - Successfully listening on IP. IP: "172.23.0.3". Port: "UTP/6881"
+(W) 2023-06-22T09:29:25 - Couldn't load IP geolocation database. Reason: No such file or directory
+(N) 2023-06-22T09:29:25 - Using built-in Web UI.
+(W) 2023-06-22T09:29:25 - Couldn't load Web UI translation for selected locale (C).
+(N) 2023-06-22T09:29:25 - Web UI: Now listening on IP: *, port: 8080
+(I) 2023-06-22T09:29:26 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Thu Jun 1 00:18:15 2023.
+(I) 2023-06-22T09:29:26 - Successfully updated IP geolocation database.
+(I) 2023-06-22T09:29:27 - Detected external IP. IP: "89.30.29.68"
+(N) 2023-06-22T09:31:53 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2023-06-22T09:35:11 - Web UI translation for selected locale (en) has been successfully loaded.
+(N) 2023-06-22T09:35:11 - Web UI: Now listening on IP: *, port: 8080
+(N) 2023-06-22T09:39:29 - WebAPI login success. IP: ::ffff:172.23.0.4
+(N) 2023-06-22T09:39:39 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2023-06-22T09:43:26 - Web UI: Now listening on IP: *, port: 8080
+(N) 2023-06-22T09:43:26 - Watching folder: "/downloads"
+(N) 2023-06-22T10:17:46 - qBittorrent termination initiated
+(I) 2023-06-22T10:17:47 - UPnP/NAT-PMP support: OFF
+(N) 2023-06-22T10:17:47 - qBittorrent is now ready to exit
+(N) 2023-06-22T10:17:56 - qBittorrent v4.5.4 started
+(N) 2023-06-22T10:17:56 - Using config directory: /config/qBittorrent
+(N) 2023-06-22T10:17:56 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2023-06-22T10:17:56 - Peer ID: "-qB4540-"
+(I) 2023-06-22T10:17:56 - HTTP User-Agent: "qBittorrent/4.5.4"
+(I) 2023-06-22T10:17:56 - Distributed Hash Table (DHT) support: ON
+(I) 2023-06-22T10:17:56 - Local Peer Discovery support: ON
+(I) 2023-06-22T10:17:56 - Peer Exchange (PeX) support: ON
+(I) 2023-06-22T10:17:56 - Anonymous mode: OFF
+(I) 2023-06-22T10:17:56 - Encryption support: ON
+(I) 2023-06-22T10:17:56 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2023-06-22T10:17:56 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2023-06-22T10:17:56 - Successfully listening on IP. IP: "172.23.0.4". Port: "TCP/6881"
+(I) 2023-06-22T10:17:56 - Successfully listening on IP. IP: "172.23.0.4". Port: "UTP/6881"
+(I) 2023-06-22T10:17:56 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Thu Jun 1 00:18:15 2023.
+(N) 2023-06-22T10:17:56 - Using built-in Web UI.
+(N) 2023-06-22T10:17:56 - Web UI translation for selected locale (en) has been successfully loaded.
+(N) 2023-06-22T10:17:56 - Web UI: Now listening on IP: *, port: 8080
+(N) 2023-06-22T10:17:56 - Watching folder: "/downloads"
+(N) 2023-06-22T10:17:58 - WebAPI login success. IP: ::ffff:172.23.0.3
+(N) 2023-06-22T10:19:06 - WebAPI login success. IP: ::ffff:172.23.0.3
+(N) 2023-06-22T10:25:23 - qBittorrent termination initiated
+(I) 2023-06-22T10:25:23 - UPnP/NAT-PMP support: OFF
+(N) 2023-06-22T10:25:23 - qBittorrent is now ready to exit
+(N) 2023-06-22T10:25:54 - qBittorrent v4.5.4 started
+(N) 2023-06-22T10:25:54 - Using config directory: /config/qBittorrent
+(N) 2023-06-22T10:25:54 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2023-06-22T10:25:54 - Peer ID: "-qB4540-"
+(I) 2023-06-22T10:25:54 - HTTP User-Agent: "qBittorrent/4.5.4"
+(I) 2023-06-22T10:25:54 - Distributed Hash Table (DHT) support: ON
+(I) 2023-06-22T10:25:54 - Local Peer Discovery support: ON
+(I) 2023-06-22T10:25:54 - Peer Exchange (PeX) support: ON
+(I) 2023-06-22T10:25:54 - Anonymous mode: OFF
+(I) 2023-06-22T10:25:54 - Encryption support: ON
+(I) 2023-06-22T10:25:54 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2023-06-22T10:25:54 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2023-06-22T10:25:54 - Successfully listening on IP. IP: "172.23.0.4". Port: "TCP/6881"
+(I) 2023-06-22T10:25:54 - Successfully listening on IP. IP: "172.23.0.4". Port: "UTP/6881"
+(I) 2023-06-22T10:25:54 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Thu Jun 1 00:18:15 2023.
+(N) 2023-06-22T10:25:54 - Using built-in Web UI.
+(N) 2023-06-22T10:25:54 - Web UI translation for selected locale (en) has been successfully loaded.
+(N) 2023-06-22T10:25:54 - Web UI: Now listening on IP: *, port: 8080
+(N) 2023-06-22T10:25:54 - Watching folder: "/downloads"
+(N) 2023-06-22T10:25:55 - WebAPI login success. IP: ::ffff:172.23.0.5
+(N) 2023-06-22T10:29:06 - Added new torrent. Torrent: "Breaking Bad s01e01 720p.BRrip.HDTV.RWN.mkv"
+(N) 2023-06-22T10:29:26 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2023-06-22T10:29:54 - Torrent paused. Torrent: "Breaking Bad s01e01 720p.BRrip.HDTV.RWN.mkv"
+(N) 2023-06-22T10:29:58 - Torrent resumed. Torrent: "Breaking Bad s01e01 720p.BRrip.HDTV.RWN.mkv"
+(N) 2023-06-22T10:29:58 - Torrent paused. Torrent: "Breaking Bad s01e01 720p.BRrip.HDTV.RWN.mkv"
+(N) 2023-06-22T10:40:56 - Torrent resumed. Torrent: "Breaking Bad s01e01 720p.BRrip.HDTV.RWN.mkv"
+(N) 2023-06-22T10:41:17 - Torrent paused. Torrent: "Breaking Bad s01e01 720p.BRrip.HDTV.RWN.mkv"
+(N) 2023-06-22T10:42:14 - Torrent resumed. Torrent: "Breaking Bad s01e01 720p.BRrip.HDTV.RWN.mkv"
+(N) 2023-06-22T10:44:15 - Torrent paused. Torrent: "Breaking Bad s01e01 720p.BRrip.HDTV.RWN.mkv"
+(N) 2023-06-22T10:51:48 - WebAPI login success. IP: ::ffff:172.23.0.5
+(N) 2023-06-22T10:52:53 - qBittorrent termination initiated
+(I) 2023-06-22T10:52:53 - UPnP/NAT-PMP support: OFF
+(N) 2023-06-22T10:52:53 - qBittorrent is now ready to exit
+(N) 2023-06-22T10:52:59 - qBittorrent v4.5.4 started
+(N) 2023-06-22T10:52:59 - Using config directory: /config/qBittorrent
+(N) 2023-06-22T10:52:59 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2023-06-22T10:52:59 - Peer ID: "-qB4540-"
+(I) 2023-06-22T10:52:59 - HTTP User-Agent: "qBittorrent/4.5.4"
+(I) 2023-06-22T10:52:59 - Distributed Hash Table (DHT) support: ON
+(I) 2023-06-22T10:52:59 - Local Peer Discovery support: ON
+(I) 2023-06-22T10:52:59 - Peer Exchange (PeX) support: ON
+(I) 2023-06-22T10:52:59 - Anonymous mode: OFF
+(I) 2023-06-22T10:52:59 - Encryption support: ON
+(I) 2023-06-22T10:52:59 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2023-06-22T10:52:59 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2023-06-22T10:52:59 - Successfully listening on IP. IP: "172.23.0.5". Port: "TCP/6881"
+(I) 2023-06-22T10:52:59 - Successfully listening on IP. IP: "172.23.0.5". Port: "UTP/6881"
+(N) 2023-06-22T10:52:59 - Restored torrent. Torrent: "Breaking Bad s01e01 720p.BRrip.HDTV.RWN.mkv"
+(I) 2023-06-22T10:53:00 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Thu Jun 1 00:18:15 2023.
+(N) 2023-06-22T10:53:00 - Using built-in Web UI.
+(N) 2023-06-22T10:53:00 - Web UI translation for selected locale (en) has been successfully loaded.
+(N) 2023-06-22T10:53:00 - Web UI: Now listening on IP: *, port: 8080
+(N) 2023-06-22T10:53:00 - Watching folder: "/downloads"
+(N) 2023-06-22T10:53:01 - WebAPI login success. IP: ::ffff:172.23.0.4
