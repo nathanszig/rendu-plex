@@ -21,6 +21,6 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          docker build . --tag ghcr.io/nathanszig/rendu-plex:latest
+          docker build ./docker-compose.yml --tag ghcr.io/nathanszig/rendu-plex:latest
           docker run ghcr.io/nathanszig/rendu-plex:latest
           docker push ghcr.io/nathanszig/rendu-plex:latest
